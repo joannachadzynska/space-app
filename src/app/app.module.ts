@@ -3,11 +3,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { A2sCommModule } from 'a2s-comm';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
+import { SpaceModule } from './space/space.module';
 
 @NgModule({
-    declarations: [AppComponent, HeaderComponent],
-    imports: [BrowserModule, AppRoutingModule, A2sCommModule],
+    declarations: [AppComponent],
+    imports: [BrowserModule, AppRoutingModule, A2sCommModule, SpaceModule],
     providers: [],
     bootstrap: [AppComponent],
 })
