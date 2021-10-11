@@ -1,15 +1,20 @@
 import { Component, OnInit } from '@angular/core';
+import { FighterShip } from '../fighter-ship';
+import { SpaceShip } from '../space-ship';
+import { BomberShip } from './../bomber-ship';
 
 @Component({
-  selector: 'app-hangar',
-  templateUrl: './hangar.component.html',
-  styleUrls: ['./hangar.component.scss']
+    selector: 'app-hangar',
+    templateUrl: './hangar.component.html',
+    styleUrls: ['./hangar.component.scss'],
 })
 export class HangarComponent implements OnInit {
+    spaceShips: SpaceShip[] = [];
 
-  constructor() { }
+    constructor() {}
 
-  ngOnInit(): void {
-  }
-
+    ngOnInit(): void {
+        this.spaceShips.push(new FighterShip());
+        this.spaceShips.push(new BomberShip());
+    }
 }
