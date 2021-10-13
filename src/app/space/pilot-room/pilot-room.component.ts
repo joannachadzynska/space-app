@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Pilot } from './../pilot';
+import { Pilot } from '../models/pilot';
 
 @Component({
     selector: 'app-pilot-room',

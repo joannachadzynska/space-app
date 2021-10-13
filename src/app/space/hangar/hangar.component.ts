@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Pilot } from '../pilot';
-import { SpaceShip } from '../space-ship';
-import { BomberShip } from './../bomber-ship';
-import { FighterShip } from './../fighter-ship';
+import { BomberShip } from '../models/bomber-ship';
+import { FighterShip } from '../models/fighter-ship';
+import { Pilot } from '../models/pilot';
+import { SpaceShip } from '../models/space-ship';
 
 @Component({
     selector: 'app-hangar',
