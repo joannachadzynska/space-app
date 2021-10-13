@@ -1,26 +1,40 @@
 :host {
     display: inline-block;
     max-width: 130px;
-    margin: 10px;
     text-align: center;
+    margin: 10px;
+}
+
+.images {
+    position: relative;
+    img {
+        max-width: 100%;
+    }
+
+    .pilot {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 30%;
+    }
 }
 
 .health {
-    background-color: hsl(0, 100%, 50%);
+    background-color: red;
     height: 10px;
     div {
-        background-color: hsl(120, 100%, 25%);
+        background-color: green;
         height: 100%;
     }
 }
 
 .property {
     display: inline-block;
-    font-size: 10px;
+    font-size: 0.875rem;
     margin: 4px;
-    color: hsl(0, 0%, 50%);
+    color: grey;
 
     &.active {
-        color: hsl(0, 0%, 100%);
+        color: white;
     }
 }
